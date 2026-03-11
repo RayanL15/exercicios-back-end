@@ -1,4 +1,3 @@
-
 //este programa vai guardar os dados pessoais de uma pessoa, nome, idade, peso e cep. E em seguida imprimira as variaveis
 #include <stdio.h>
 int main() {
