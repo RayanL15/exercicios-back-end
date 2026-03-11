@@ -1,18 +1,18 @@
 //este programa vai guardar os dados pessoais de uma pessoa, nome, idade, peso e cep. E em seguida imprimira as variaveis.
 #include <stdio.h>
-int main() {
+int main(0) {
     char nome[] = "Rayan Lorenzo de Mendonça Andrade";
     int idade = 18;
     char genêro[] = "masculino";
     float peso = 70.6;
-    int cep = 71930750;
+    char cep[] = "71930750";
     
     //as variaveis que serão impressas.
     printf("\t nome: %s\n", nome);
     printf("\t idade: %d\n", idade);
     printf("\t genêro: %s\n", genêro);
     printf("\t peso: %.1f\n", peso);
-    printf("\t CEP: %d\n", cep);
+    printf("\t CEP: %s\n", cep);
     
     return 0;
 }
