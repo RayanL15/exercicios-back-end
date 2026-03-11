@@ -3,7 +3,7 @@
 int main() {
     char nome[] = "Rayan Lorenzo de Mendonça Andrade";
     int idade = 18;
-    char genêro[] = "feminino";
+    char genêro[] = "masculino";
     float peso = 70.6;
     int cep = 71930750;
     
