@@ -2,7 +2,7 @@
 
 int main() {
     int numero;
-    printf("Digite ate onde multiplicao: ");
+    printf("Digite ate onde vai a multiplicao: ");
     scanf("%d", &numero);
 
     int multiplicacao = 1;
