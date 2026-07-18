@@ -9,6 +9,6 @@ int main() {
     for (int i = 1; i <= numero; i++) {
         multiplicacao *= i;
     }
-    printf("A multiplicacao de 1 ate %d e: %d", numero, multiplicacao);
+    printf("O fatorial de %d e: %d", numero, multiplicacao);
     return 0;
 }
