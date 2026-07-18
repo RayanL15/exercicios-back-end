@@ -2,7 +2,7 @@
 
 int main() {
     int numero;
-    printf("Digite ate onde vai a multiplicao: ");
+    printf("Digite um numero para saber o fatorial: ");
     scanf("%d", &numero);
 
     int multiplicacao = 1;
