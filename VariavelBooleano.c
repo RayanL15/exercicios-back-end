@@ -15,9 +15,9 @@ int main() {
         printf("Pode ir tranquilo.\n");
     }
 
-	/*O bool n„o "sabe" nada sozinho ó È uma regra de convers„o que o C aplica.
-	Toda vez que vocÍ atribui um valor a uma vari·vel bool, o C faz essa pergunta por tr·s dos panos:
-	"Esse valor È zero ou diferente de zero?"
+	/*O bool n√£o "sabe" nada sozinho ‚Äî √© uma regra de convers√£o que o C aplica.
+	Toda vez que voc√™ atribui um valor a uma vari√°vel bool, o C faz essa pergunta por tr√°s dos panos:
+	"Esse valor √© zero ou diferente de zero?"
 	Se for zero ? vira false (guardado como 0)
 	Se for qualquer outra coisa (1, 2, -5, 100...) ? vira true (guardado como 1)*/
 
