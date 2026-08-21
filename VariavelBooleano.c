@@ -15,11 +15,7 @@ int main() {
         printf("Pode ir tranquilo.\n");
     }
 
-	/*O bool não "sabe" nada sozinho — é uma regra de conversão que o C aplica.
-	Toda vez que você atribui um valor a uma variável bool, o C faz essa pergunta por trás dos panos:
-	"Esse valor é zero ou diferente de zero?"
-	Se for zero ? vira false (guardado como 0)
-	Se for qualquer outra coisa (1, 2, -5, 100...) ? vira true (guardado como 1)*/
+	/*0 significa falso; Diferente de zero é verdadeiro*/
 
     return 0;
 }
