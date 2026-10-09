@@ -1,18 +1,18 @@
 
-# 💻 Exercícios Back-end
+# Exercícios Back-end
 
 Este repositório contém exercícios de programação desenvolvidos durante meus estudos.
 
-## 📚 Linguagens utilizadas
+## Linguagens utilizadas
 
 - **C** – Lógica de programação e fundamentos.
 - **Python** – Exercícios básicos de programação.
 
-## 🎯 Objetivo
+## Objetivo
 
 Praticar programação, desenvolver meu raciocínio lógico e acompanhar minha evolução nos estudos.
 
-## 📖 Conteúdos
+## Conteúdos
 
 - Variáveis e operadores
 - Estruturas condicionais (`if`, `else`, `switch`)
@@ -21,4 +21,4 @@ Praticar programação, desenvolver meu raciocínio lógico e acompanhar minha e
 
 ---
 
-📌 **Repositório destinado a estudos e práticas de programação.**
+**Repositório destinado a estudos e práticas de programação.**
