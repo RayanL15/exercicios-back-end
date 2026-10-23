@@ -18,3 +18,5 @@ int main (){
     printf("\n%d horas.", hora);
       printf("\n%d minutos.", minuto);
         printf("\n%d segundos.", segundo);
+        return 0;
+}
