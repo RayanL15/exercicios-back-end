@@ -4,7 +4,7 @@
 
 int main (){
     system("chcp 65001 > nul"); //Essa linha configura o terminal do Windows para usar UTF-8, ajudando a mostrar acentos corretamente.
-    setlocale(LC_ALL, "Portuguese");
+    setlocale(LC_ALL, "Portuguese"); //Configura todas as categorias regionais do programa para português, como números, datas e tratamento de caracteres.
 
     int entrada, segundo, minuto, hora;
     
