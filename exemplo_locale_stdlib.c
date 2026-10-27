@@ -20,3 +20,8 @@ int main (){
         printf("\n%d segundos.", segundo);
         return 0;
 }
+
+/*system(): executa um comando do Windows.
+chcp: vem de change code page → “mudar a página de códigos”, que define como o terminal interpreta os caracteres.
+65001: é o número que identifica UTF-8, permitindo representar acentos e muitos outros caracteres.
+> nul: esconde a mensagem de confirmação do comando. Não é obrigatório.*/
