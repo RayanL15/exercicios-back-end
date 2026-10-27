@@ -25,3 +25,7 @@ int main (){
 chcp: vem de change code page → “mudar a página de códigos”, que define como o terminal interpreta os caracteres.
 65001: é o número que identifica UTF-8, permitindo representar acentos e muitos outros caracteres.
 > nul: esconde a mensagem de confirmação do comando. Não é obrigatório.*/
+
+/*setlocale: define as configurações regionais do programa.
+LC_ALL: seleciona todas as categorias de configuração regional, como regras para números, datas e tratamento de caracteres. ALL significa “todos”.
+"Portuguese": solicita a configuração regional de português.*/
