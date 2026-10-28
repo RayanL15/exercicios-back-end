@@ -27,5 +27,5 @@ chcp: vem de change code page → “mudar a página de códigos”, que define 
 > nul: esconde a mensagem de confirmação do comando. Não é obrigatório.
 
 setlocale: define as configurações regionais do programa.
-LC_ALL: seleciona todas as categorias de configuração regional, como regras para números, datas e tratamento de caracteres. ALL significa “todos”.
+LC_ALL: seleciona todas as categorias de configuração regional, como regras para números, datas e tratamento de caracteres. LC significa "localidade" e ALL significa “todos”.
 "Portuguese": solicita a configuração regional de português.*/
