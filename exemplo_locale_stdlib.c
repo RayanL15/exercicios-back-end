@@ -1,31 +1,37 @@
 #include <stdio.h>
-#include <locale.h> //configura regras regionais, como a vírgula decimal e o tratamento de caracteres em certas funções.
-#include <stdlib.h> //oferece funções utilitárias, como gerar números pseudoaleatórios, converter texto em número e executar comandos do sistema com system().
+#include <locale.h> //Permite configurar regras regionais; aqui, usamos para o separador decimal.
+#include <stdlib.h> //Oferece funções utilitárias, como gerar números pseudoaleatórios, converter texto em número e executar comandos com system().
 
-int main (){
-    system("chcp 65001 > nul"); //Essa linha configura o terminal do Windows para usar UTF-8, ajudando a mostrar acentos corretamente.
-    setlocale(LC_ALL, "Portuguese"); //Configura todas as categorias regionais do programa para português, como números, datas e tratamento de caracteres.
+int main(void) {
+    system("chcp 65001 > nul"); //Configura o terminal do Windows para usar UTF-8, ajudando a mostrar acentos corretamente.
+    setlocale(LC_NUMERIC, "Portuguese"); //Configura as regras regionais dos números, como a vírgula decimal.
 
-    int entrada, segundo, minuto, hora;
+    printf("Olá! Você está no programa de conversão. Atenção às informações!\n");
     
-    printf("\nDigite um valor em segundos:\n");
-    scanf("%d", entrada);
+    int entrada, segundo, minuto, hora;
 
-   hora = entrada/3600;
-   minuto = (entrada/3600)%60;
-   segundo = ((entrada/3600)%60)%60;
+    printf("\nDigite um valor em segundos:\n");
+    scanf("%d", &entrada);
+
+    hora = entrada / 3600;
+    minuto = (entrada / 60) % 60;
+    segundo = entrada % 60;
 
     printf("\n%d horas.", hora);
-      printf("\n%d minutos.", minuto);
-        printf("\n%d segundos.", segundo);
-        return 0;
+    printf("\n%d minutos.", minuto);
+    printf("\n%d segundos.", segundo);
+
+    return 0;
 }
 
-/*system(): executa um comando do Windows.
-chcp: vem de change code page → “mudar a página de códigos”, que define como o terminal interpreta os caracteres.
-65001: é o número que identifica UTF-8, permitindo representar acentos e muitos outros caracteres.
+/*
+system(): executa um comando do sistema operacional.
+chcp: vem de change code page, ou seja, mudar a página de códigos do terminal.
+65001: é o número que identifica UTF-8.
 > nul: esconde a mensagem de confirmação do comando. Não é obrigatório.
 
 setlocale: define as configurações regionais do programa.
-LC_ALL: seleciona todas as categorias de configuração regional, como regras para números, datas e tratamento de caracteres. LC significa "localidade" e ALL significa “todos”.
-"Portuguese": solicita a configuração regional de português.*/
+LC_NUMERIC: seleciona apenas as regras de formatação e leitura de números,
+como o separador decimal. NUMERIC significa "numérico".
+"Portuguese": solicita a configuração regional de português.
+*/
