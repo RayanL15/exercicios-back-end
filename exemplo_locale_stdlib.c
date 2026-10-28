@@ -4,8 +4,7 @@
 
 int main(void) {
     system("chcp 65001 > nul"); //Configura o terminal do Windows para usar UTF-8, ajudando a mostrar acentos corretamente.
-    setlocale(LC_NUMERIC, "Portuguese"); //Configura as regras regionais dos números, como a vírgula decimal.
-
+    setlocale(LC_ALL, "Portuguese"); //Configura todas as categorias regionais do programa para português, como números, datas e tratamento de caracteres.
     printf("Olá! Você está no programa de conversão. Atenção às informações!\n");
     
     int entrada, segundo, minuto, hora;
@@ -31,7 +30,7 @@ chcp: vem de change code page, ou seja, mudar a página de códigos do terminal.
 > nul: esconde a mensagem de confirmação do comando. Não é obrigatório.
 
 setlocale: define as configurações regionais do programa.
-LC_NUMERIC: seleciona apenas as regras de formatação e leitura de números,
-como o separador decimal. NUMERIC significa "numérico".
+LC_ALL: seleciona todas as categorias de configuração regional, como regras para números, datas e tratamento de caracteres.
+LC significa "localidade" e ALL significa “todos”.
 "Portuguese": solicita a configuração regional de português.
 */
